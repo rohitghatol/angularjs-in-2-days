@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+
+    <script src="scripts/angular.js"></script>
+
+    <script src="modules/todo/todo.module.js"></script>
+    <script src="modules/todo/controllers/todo.js"></script>
+
+    <script src="modules/app.js"></script>
+</head>
+<body>
+
+    <h1>Todo App</h1>
+    <div ng-controller="TodoCtrl">
+        <div>There are {{todos.length}} Items in Todo List</div>
+    </div>
+</body>
+</html>
