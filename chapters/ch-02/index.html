@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJs Starter</title>
+    <script src="script/angular.js"></script>
+
+</head>
+<body>
+    <h1>AngularJs Starter</h1>
+    <div ng-controller="MainCtrl">
+        <div><span>Counter:</span> <span>{{counter}}</span></div>
+        <hr>
+        <div><button ng-click="increment()">Increment</button></div>
+    </div>
+
+
+    <script>
+        angular.module("app",[]);
+
+        angular.module("app")
+                .controller("MainCtrl",function($scope){
+                    $scope.counter=0;
+
+                    $scope.increment = function(){
+                        $scope.counter++;
+                    }
+                });
+    </script>
+</body>
+</html>
